@@ -1,4 +1,4 @@
-# IAM (Indentity and Access Management)
+# Indentity and Access Management - IAM 
 ## Định nghĩa
 Là một service giúp quản lý User trong hệ thống AWS.
 ## Các khái niệm

@@ -7,7 +7,16 @@
 - Distribution - Tên của CDN chứa các Edge locations
 - **Amazon Cloud Front** có thể được sử dụng để deliver toàn bộ website (tĩnh, động, stream, interactive content) nhờ sử dụng hệ thống edge location. Request lấy content sẽ được chuyển đến EL gần nhất, content sẽ được chuyển đến với performance tốt nhất. Kết hợp cùng S3, EC2, Elastic load balancer, route53 và cả các non-AWS server.
 - Web distribution
+  - Origin Settings: cài đặt origin của tài nguyên (S3, ELB,...)
+  - Default Cache Behavior Settings: cài đặt các method cache (HTTP methods, TTL, SSL)
+    - Restrict Viewer Access: retrict Cloudfront bằng signed URL
+  - Distribution Settings
+    - CNAMEs
+  - Geo-Restrictions
+    - Whitelist
+    - Blacklist
 - RTMP - Media streaming
+
 
 ## Exam tips:
 - Edge location != AWS region/az
