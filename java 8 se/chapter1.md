@@ -1,3 +1,7 @@
+# CHAPTER 1: Java Building Blocks
+_0412 - 0422_
+
+
 # Exam objectives
 1. Java Basics
   - Define the scope of variables
@@ -11,8 +15,8 @@
   - Know how to read or write to object fields
   - Explain an Object's Lifecycle (creation, "dereference by reassignment" and garbage collection)
 
-## Notes:
-### Methods and Fields
+# Notes:
+## Methods and Fields
 - Object is a runtime instance of a class in memory.
 - Java classes have two primary element: methods and fields.
 - Example class:
@@ -44,12 +48,12 @@ public static void main(String args[]){
 
 - all command line arguments are String objects.
 
-### Packages and Imports
+## Packages and Imports
 - Java puts classes in packages (which are folders).
 - import statement tells the compiler which package to look in to find a class.
 
 
-#### Wildcards
+### Wildcards
 - Class in the same package are often imported together.
 
 ```java
@@ -65,7 +69,7 @@ public class ImportExample {
 
 - Inlcluding wildcards DO NOT slow the program down, it also help shorten the import list.
 
-#### Redundant Imports
+### Redundant Imports
 - `java.lang` is automatically imported.
 ie:
 ```java
@@ -85,7 +89,7 @@ import java.nio.*.*; // NO GOOD – you can only have one wildcard
 import java.nio.files.Paths.*; // NO GOOD – you cannot import methods
  //only class names
 ```
-#### Naming conflicts
+### Naming conflicts
 - Different packages' classes can have the same name
 - Using 2 wildcard import for packages that have same used class ends up compiler error
 ie:
@@ -116,7 +120,7 @@ public class Conflicts {
  java.sql.Date sqlDate;
 }
 ```
-### Code Formatting on the Exam
+## Code Formatting on the Exam
 - If the code begins with line 1 or not?
 
 ## Creating objects
@@ -257,8 +261,8 @@ int numberAnimals = 100;
 String s1, s2;
 String s3 = "yes", s4 = "no";
 int num, String value; // DOES NOT COMPILE
-
 ```
+
 ### Identifiers
 - There are only three rules to remember for legal identifiers:
   - The name must begin with a letter or the symbol $ or \_.
@@ -446,4 +450,4 @@ Java code is object oriented, meaning all code is defined in classes. Access mod
   22. B E
   23. C **D** ~~F~~
 
-  Review: 1 3 4 5 6 7 8 9 11 12 15 20 21 23
+  Need to review: 1 3 4 5 6 7 8 9 11 12 15 20 21 23
