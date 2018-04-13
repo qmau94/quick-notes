@@ -364,14 +364,86 @@ public class Meerkat { // then comes the class
 - **Multi classes can be in a file but just one class can be public**
 
 ## Destroying Objects
+- Java objects are stored in your program memory's heap. The heap is quite large but there is always a limit to its size.
 
 ### Garbage Collection
--Java provides a method called `System.gc()`. Now might be a good time for Java to kick off a garbage collection run. Java is free to ignore the request.
+- Refers to the process of automatically freeing memory on the heap by deleting objects that are no longer reachable in your program.
+- Java provides a method called `System.gc()`. Now might be a good time for Java to kick off a garbage collection run. Java is free to ignore the request.
 - An object will remain on the heap until it is no longer reachable. An object is no longer reachable when one of two situations occurs:
   - The object no longer has any references pointing to it.
   - All references to the object have gone out of scope.
 
 ![](https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/30689087_10214056473000141_5917426007068901376_n.jpg?_nc_cat=0&oh=7081ee224f027c59a6c7293b4959176b&oe=5B75243E)
 
+### finalize()
+- This method gets called if the garbage collector tries to collect the object. If the garbage collector doesn’t run, the method doesn’t get called.
+- The lesson is that the finalize() call could run zero or one time.
 
-pg 37
+## Benefits of Java
+- **Object Oriented:** all code is defined in classes and most of those classes can be instantiated into objects. Java allows functional programming within a class, but objects oriented is still the main organization of code.
+- **Encapsulation:** Java support access modifier to protect data from unintended access and modification.
+- **Platform Independent:** Java is an interpreted language because it gets compiled to bytecode. This is known as **"write once, run everywhere"**.
+- **Robust:** Java over C++ in preventing memory leaks. Java manages memory on its own and does garbage collection automatically.
+- **Simple:** Java was intended to be simpler than C++. In addition to eliminating pointers, it got rid of operator overloading.
+- **Secure:** Java code runs inside the JVM. This creates a sandbox that makes it hard for Java code to do evil things to the computer it is running on.
+
+## Summary
+
+- In this chapter, you saw that Java classes consist of members called fields and methods. An object is an instance of a Java class. There are three styles of comment: a single-line comment (//), a multiline comment (/* \*/), and a Javadoc comment (/** \*/).
+
+- Java begins program execution with a main() method. The most common signature for this method run from the command line is `public static void main(String[] args)`. Arguments are passed in after the class name, as in java NameOfClass firstArgument. Arguments are indexed starting with 0.
+
+- Java code is organized into folders called packages. To reference classes in other packages, you use an import statement. A wildcard ending an import statement means you want to import all classes in that package. It does not include packages that are inside that one.
+
+- java.lang is a special package that does not need to be imported.
+
+- Constructors create Java objects. A constructor is a method matching the class name and omitting the return type. When an object is instantiated, fields and blocks of code are initialized first. Then the constructor is run.
+Primitive types are the basic building blocks of Java types. They are assembled into reference types. Reference types can have methods and be assigned to null. In addition to “normal” numbers, numeric literals are allowed to begin with 0 (octal), 0x (hex), 0X (hex), 0b (binary), or 0B (binary). Numeric literals are also allowed to contain underscores as long
+as they are directly between two other numbers.
+
+Declaring a variable involves stating the data type and giving the variable a name. Variables that represent fields in a class are automatically initialized to their corresponding “zero” or null value during object instantiation. Local variables must be specifically initialized. Identifiers may contain letters, numbers, $, or \_. Identifiers may not begin with numbers.
+
+Scope refers to that portion of code where a variable can be accessed. There are three kinds of variables in Java, depending on their scope: instance variables, class variables, and local variables. Instance variables are the non-static fields of your class. Class variables are the static fields within a class. Local variables are declared within a method.
+
+For some class elements, order matters within the file. The package statement comes first if present. Then comes the import statements if present. Then comes the class declaration. Fields and methods are allowed to be in any order within the class.
+
+Garbage collection is responsible for removing objects from memory when they can never be used again. An object becomes eligible for garbage collection when there are no more references to it or its references have all gone out of scope. The finalize() method will run once for each object if/when it is first garbage collected.
+
+Java code is object oriented, meaning all code is defined in classes. Access modifiers allow classes to encapsulate data. Java is platform independent, compiling to bytecode. It is robust and simple by not providing pointers or operator overloading. Finally, Java is secure because it runs inside a virtual machine.
+
+## Exam Essentials
+- Be able to write code using a `main()` method.
+- Understand the effect of using packages and Imports.
+- Be able to recognize a constructor.
+- Be able to identify legal and illegal declarations and initialization.
+- Be able to determine where variables go into and out of scope.
+- Be able to recognize misplaced statements in a class.
+- Know how to identify when an object is eligible for garbage collection.
+
+## Review questions
+- 04/13/2018 → **9/23 = 39.1%**
+  1. A, B, **E**
+  2. D
+  3. D **B E**
+  4. **A B** ~~E~~
+  5. ~~A~~ **C D**
+  6. ~~D~~ **E**
+  7. ~~F~~ **A B C**
+  8. B ~~E~~
+  9. A **C D E**
+  10. E
+  11. **C** D
+  12. ~~D F~~ **G**
+  13. A D
+  14. D
+  15. A ~~D~~ E
+  16. B C D
+  17. A E
+  18. C D E
+  19. B D
+  20. ~~A D~~ **B E**
+  21. ~~C~~ **A**
+  22. B E
+  23. C **D** ~~F~~
+
+  Review: 1 3 4 5 6 7 8 9 11 12 15 20 21 23
