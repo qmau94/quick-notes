@@ -36,8 +36,8 @@ public class Animal {
   }
 }
 ```
-- method: access modifier, static (binds method to the class), return type, method name, parameters.
-- A file have just a public class matches file name but can contain 2 or more classes.
+- Method: access modifier, static (binds method to the class), return type, method name, parameters.
+- A file can have 2 or more classes but just one of them is a public class and have the name matches the file's name.
 - `main()` class is a gate way between the startup of a Java process managed by JVM and the beggining of the programmer's code.
 
 ```java
@@ -46,11 +46,11 @@ public static void main(String args[]){
 }
 ```
 
-- all command line arguments are String objects.
+- All command line arguments are String objects.
 
 ## Packages and Imports
 - Java puts classes in packages (which are folders).
-- import statement tells the compiler which package to look in to find a class.
+- Import statement tells the compiler which package to look in to find a class.
 
 
 ### Wildcards
@@ -71,7 +71,7 @@ public class ImportExample {
 
 ### Redundant Imports
 - `java.lang` is automatically imported.
-ie:
+- Redundant Imports example:
 ```java
 import java.nio.file.*;
 ```
@@ -125,13 +125,11 @@ public class Conflicts {
 
 ## Creating objects
 ### Constuctors
-- To create an object
+- To create an object declare the type + variable name = new constructor;
 
 ```java
 Random r = new Random();
 ```
-
-- declare the type + variable name = new constructor;
 
 ```java
 public class Chick {
@@ -158,9 +156,9 @@ public class Chicken {
 public class Swan {
    int numberEggs;// instance variable
    public static void main(String[] args) {
-   Swan mother = new Swan();
-   mother.numberEggs = 1; // set variable
-   System.out.println(mother.numberEggs); // read variable
+     Swan mother = new Swan();
+     mother.numberEggs = 1; // set variable
+     System.out.println(mother.numberEggs); // read variable
   }
 }
 ```
@@ -180,7 +178,7 @@ public class Swan {
 ### Primitive Types
 
 |Keyword|Type| Example|
-| --- | :---: | :---: |:---|
+| :---: | :---: | :---: |
 | boolean | true of false | true |
 |byte|8-bit integral value|123|
 |short|16-bit integral value|123|
@@ -204,13 +202,15 @@ public class Swan {
 int million1 = 1000000;
 int million2 = 1_000_000;
 ```
-Be careful
+- Be careful
+
 ```java
 double notAtStart = _1000.00; // DOES NOT COMPILE
 double notAtEnd = 1000.00_; // DOES NOT COMPILE
 double notByDecimal = 1000_.00; // DOES NOT COMPILE
 double annoyingButLegal = 1_00_0.0_0; // this one compiles
 ```
+
 ### Reference Types
 - Referenced object is not stored on memory, we use **pointer** to address them.
 - A value is assigned to a reference in one of two ways:
@@ -248,10 +248,11 @@ come with Java begin with uppercase.
 ```java
 String zooName;
 int numberAnimals;
-
 zooName = "The Best Zoo";
 numberAnimals = 100;
+
 // or
+
 String zooName = "The Best Zoo";
 int numberAnimals = 100;
 ```
@@ -267,15 +268,15 @@ int num, String value; // DOES NOT COMPILE
 - There are only three rules to remember for legal identifiers:
   - The name must begin with a letter or the symbol $ or \_.
   - Subsequent characters may also be numbers.
-  - You cannot use the same name as a Java _reserved word_. As you might imagine, a reserved word is a keyword that Java has reserved so that you are not allowed to use it. Remember that Java is case sensitive, so you can use versions of the keywords that only differ in case. Please don’t, though.
+  - You cannot use the same name as a Java _reserved word_. Java is case sensitive, so you can use versions of the keywords that only differ in case. Please don’t, though.
 
 - Reserved words are
 
-  abstract assert boolean break byte
-  case catch char class const*
+>  abstract assert boolean break byte
+  case catch char class const
   continue default do double else
   enum extends false final finally
-  float for goto* if implements
+  float for goto if implements
   import instanceof int interface long
   native new null package private
   protected public return short static
@@ -318,9 +319,10 @@ int num, String value; // DOES NOT COMPILE
 
 ### Understanding Variable Scope
 - These smaller contained blocks can reference variables defined in the larger scoped blocks, but not vice versa.
-- Local variables—in scope from declaration to end of block
-- Instance variables—in scope from declaration until object garbage collected
-- Class variables—in scope from declaration until program ends
+- Local variables - in scope from declaration to end of block
+- Instance variables - in scope from declaration until object garbage collected
+- Class variables - in scope from declaration until program ends
+
 ie:
 
 ```java
@@ -340,7 +342,7 @@ ie:
 Block for scope
 
 |Line|First line in block| Last line in block|
-| --- | --- | --- | --- |
+| --- | --- | ---| 
 | while | 15 | 19 |
 | if | 13 | 20 |
 | Method | 11 | 22 |
@@ -348,9 +350,9 @@ Block for scope
 ## Ordering Elements in a Class
 
 |Element|Example|Required?|Where does it go?|
-| -- | --| -- | -- | -- |
+| -- | --| -- | -- |
 | Package | package abc; | No | First line in the file |
-| Import statements | import java.util.*; | No | Immediately after the package |
+| Import statements | import java.util.\*; | No | Immediately after the package |
 | Class declaration | public class C | Yes | Immediately after the import |
 | Field declaration |int value; | No | Anywhere inside a class |
 | Method declarations | void method() | No | Anywhere inside a class |
@@ -393,7 +395,7 @@ public class Meerkat { // then comes the class
 
 ## Summary
 
-- In this chapter, you saw that Java classes consist of members called fields and methods. An object is an instance of a Java class. There are three styles of comment: a single-line comment (//), a multiline comment (/* \*/), and a Javadoc comment (/** \*/).
+- In this chapter, you saw that Java classes consist of members called fields and methods. An object is an instance of a Java class. There are three styles of comment: a single-line comment (//), a multiline comment (/\* \\\*/), and a Javadoc comment (/\*\* \\\*/).
 
 - Java begins program execution with a main() method. The most common signature for this method run from the command line is `public static void main(String[] args)`. Arguments are passed in after the class name, as in java NameOfClass firstArgument. Arguments are indexed starting with 0.
 
@@ -405,15 +407,15 @@ public class Meerkat { // then comes the class
 Primitive types are the basic building blocks of Java types. They are assembled into reference types. Reference types can have methods and be assigned to null. In addition to “normal” numbers, numeric literals are allowed to begin with 0 (octal), 0x (hex), 0X (hex), 0b (binary), or 0B (binary). Numeric literals are also allowed to contain underscores as long
 as they are directly between two other numbers.
 
-Declaring a variable involves stating the data type and giving the variable a name. Variables that represent fields in a class are automatically initialized to their corresponding “zero” or null value during object instantiation. Local variables must be specifically initialized. Identifiers may contain letters, numbers, $, or \_. Identifiers may not begin with numbers.
+- Declaring a variable involves stating the data type and giving the variable a name. Variables that represent fields in a class are automatically initialized to their corresponding “zero” or null value during object instantiation. Local variables must be specifically initialized. Identifiers may contain letters, numbers, $, or \_. Identifiers may not begin with numbers.
 
-Scope refers to that portion of code where a variable can be accessed. There are three kinds of variables in Java, depending on their scope: instance variables, class variables, and local variables. Instance variables are the non-static fields of your class. Class variables are the static fields within a class. Local variables are declared within a method.
+- Scope refers to that portion of code where a variable can be accessed. There are three kinds of variables in Java, depending on their scope: instance variables, class variables, and local variables. Instance variables are the non-static fields of your class. Class variables are the static fields within a class. Local variables are declared within a method.
 
-For some class elements, order matters within the file. The package statement comes first if present. Then comes the import statements if present. Then comes the class declaration. Fields and methods are allowed to be in any order within the class.
+- For some class elements, order matters within the file. The package statement comes first if present. Then comes the import statements if present. Then comes the class declaration. Fields and methods are allowed to be in any order within the class.
 
-Garbage collection is responsible for removing objects from memory when they can never be used again. An object becomes eligible for garbage collection when there are no more references to it or its references have all gone out of scope. The finalize() method will run once for each object if/when it is first garbage collected.
+- Garbage collection is responsible for removing objects from memory when they can never be used again. An object becomes eligible for garbage collection when there are no more references to it or its references have all gone out of scope. The finalize() method will run once for each object if/when it is first garbage collected.
 
-Java code is object oriented, meaning all code is defined in classes. Access modifiers allow classes to encapsulate data. Java is platform independent, compiling to bytecode. It is robust and simple by not providing pointers or operator overloading. Finally, Java is secure because it runs inside a virtual machine.
+- Java code is object oriented, meaning all code is defined in classes. Access modifiers allow classes to encapsulate data. Java is platform independent, compiling to bytecode. It is robust and simple by not providing pointers or operator overloading. Finally, Java is secure because it runs inside a virtual machine.
 
 ## Exam Essentials
 - Be able to write code using a `main()` method.
@@ -426,28 +428,57 @@ Java code is object oriented, meaning all code is defined in classes. Access mod
 
 ## Review questions
 - 04/13/2018 → **9/23 = 39.1%**
-  1. A, B, **E**
-  2. D
-  3. D **B E**
-  4. **A B** ~~E~~
-  5. ~~A~~ **C D**
-  6. ~~D~~ **E**
-  7. ~~F~~ **A B C**
-  8. B ~~E~~
-  9. A **C D E**
-  10. E
-  11. **C** D
-  12. ~~D F~~ **G**
-  13. A D
-  14. D
-  15. A ~~D~~ E
-  16. B C D
-  17. A E
-  18. C D E
-  19. B D
-  20. ~~A D~~ **B E**
-  21. ~~C~~ **A**
-  22. B E
-  23. C **D** ~~F~~
 
-  Need to review: 1 3 4 5 6 7 8 9 11 12 15 20 21 23
+1. A, B, **E**
+2. D
+3. D **B E**
+4. **A B** ~~E~~
+5. ~~A~~ **C D**
+6. ~~D~~ **E**
+7. ~~F~~ **A B C**
+8. B ~~E~~
+9. A **C D E**
+10. E
+11. **C** D
+12. ~~D F~~ **G**
+13. A D
+14. D
+15. A ~~D~~ E
+16. B C D
+17. A E
+18. C D E
+19. B D
+20. ~~A D~~ **B E**
+21. ~~C~~ **A**
+22. B E
+23. C **D** ~~F~~
+
+Need to review: 1 3 4 5 6 7 8 9 11 12 15 20 21 23
+
+- 04/16/2018 → **21/23 = 91.3%**
+
+1. A B E
+2. D
+3. D B E
+4. A B
+5. ~~A~~ C D 
+6. E
+7. A B C 
+8. B  
+9. A C D E
+10. E
+11. C D
+12. ~~C D F~~ **G** **local variables do not get assigned default values**
+13. A D 
+14. D
+15. A E
+16. B C D
+17. A E
+18. C D E
+19. B D
+20. B E
+21. A
+22. B C E
+23. C D
+
+Need to review: 5 12
