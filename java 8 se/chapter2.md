@@ -15,7 +15,7 @@ _0422-0430_
 
 # Notes
 ## Understanding Java Operators
-- Java _operator_ is a special symbol that can be applied to a set of variables, values, of literals - referred to as operans and that return a result.
+- Java _operator_ is a special symbol that can be applied to a set of variables, values, of literals - referred to as operands and that return a result.
 - Types:
   - Unary
   - Binary
@@ -113,6 +113,8 @@ System.out.println(y); // Also, outputs 3
 
 - Compares two expressions and return a boolean value. The first four relational operators are applied to numeric primitive data types only.
 
+|||
+|--|--|
 |<|Stricly less than|
 |<=| Less than or equal to|
 |>|Strictly greater than|
@@ -120,6 +122,8 @@ System.out.println(y); // Also, outputs 3
 
 - The fifth relational operator is applied to object references and classes or interfaces.
 
+|||
+|---|---|
 |a instanceof b | True if the reference that a points to is an instance of a class, subclass or class that implements a particular interface, as named in b|
 
 ### Logical Operators
@@ -128,7 +132,7 @@ System.out.println(y); // Also, outputs 3
   - & AND is only true if both operands are true.
   - | Inclusive OR is only false if both operands are false.
   - ^ Exclusive OR is only true if the operands are differents.
-- Short-cỉcuit operators are nearly indentical to the logical operators, & and |, respectively, except that the right-hand side of the expression may never be evaluated if the final result can be determined by the left-hand side of the expression.
+- Short-circuit operators are nearly indentical to the logical operators, & and |, respectively, except that the right-hand side of the expression may never be evaluated if the final result can be determined by the left-hand side of the expression.
 
 ```java
 if (x!= null && x.getValue() < 5){
@@ -150,7 +154,8 @@ if (x!= null & x.getValue() < 5){ // throw an exception if x is null
 
 ## Understanding Java Statements
 ### The if-then statement
-![](https://imgur.com/d75f9669-69c5-476e-9a3b-a8bcf3678d6e.png)
+
+![](https://i.imgur.com/dDXF3l5.png)
 
 ```java
 if(hourOfDay < 11) {
@@ -214,7 +219,7 @@ int animal = (y < 91) ? 9 : "Horse"; // DOES NOT COMPILE
 
 ![](https://i.imgur.com/9LvR1Q8.png)
 
-- Like the while loop but guarantees that the statement or block will be executed at least once.
+- Like the while loop but guarantees that **the statement or block will be executed at least once**.
 - The while loop purposely orders the statement of block of statements before the conditional expression, in order to reinforce that the statement will be executed before the expression is ever evaluated.
 
 ### The for statement
@@ -433,3 +438,29 @@ Advanced flow control usage
 18. ~~C~~ **A**
 19. ~~C~~ **D**
 20. B
+
+Need to review: Promote data types, order of numeric operators, boolean expression, "=" and "==", boolean expression parentheses
+
+- 04/18/2017 → **18/20=90%**
+1. A D
+2. A B D
+3. F
+4. B C D F
+5. C
+6. F
+7. D
+8. B
+9. F
+10. D
+11. A
+12. D
+13. A
+14. C 
+15. E
+16. D
+17. D
+18. ~~B~~ **A**
+19. ~~F~~ **D**
+20. B
+
+Need to review: 18 19

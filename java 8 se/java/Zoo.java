@@ -1,6 +1,8 @@
 public class Zoo {
   public static void main(String args[]){
-    System.out.println(args[0]);
-    System.out.println(args[1]);
+    int x1 = 50, x2 = 75;
+    boolean b = x1 >= x2;
+    if (b= true) System.out.println("Success");
+    else System.out.println("Failure");
   }
 }

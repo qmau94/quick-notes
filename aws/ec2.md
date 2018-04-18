@@ -28,21 +28,23 @@ Chỉ yêu cầu chỉ trả phần tài nguyên sử dụng, cung cấp các �
 ![ec2-types](https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/30443448_10214041446144479_5798647282043715584_o.jpg?_nc_cat=0&oh=12b358c1cceeacf9ad6175b040b7548b&oe=5B6A76F5)
 - EC2 Intance Types
 
-D for Density - Dense Storage
-I for IOPS - Highspeed Strorage
-R for RAM  - Memory Optimized
-T cheap general purpose (t2 micro)
-M Main choice - General Purpose
-C for Compute - Compute Optimized
-G for Graphics - Graphic Intensive
-F FPGA - Field Programmable Gate Array
-P Graphic/ General Purpose GPU (Pics)
-X Memory Optimized
+|||
+|--|--|
+|D| for Density - Dense Storage|
+|I| for IOPS - Highspeed Strorage|
+|R| for RAM  - Memory Optimized|
+|T| cheap general purpose (t2 micro)|
+|M| Main choice - General Purpose|
+|C| for Compute - Compute Optimized|
+|G| for Graphics - Graphic Intensive|
+|F| FPGA - Field Programmable Gate Array|
+|P| Graphic/ General Purpose GPU (Pics)|
+|X |Memory Optimized|
 
-DR Mc GIFT PX
+**DR Mc GIFT PX**
 
 - Elastic Block Storage - EBS
-  - Tạo storage volumes sử dụng trong EC2. Hệ thống sử dụng phía trên EBS có thể sử dụng block storage cho việc tạo dâtbase,... EBS được đặt trong một Available zone (AZ) và được replicate để bảo vệ khỏi sự cố.
+  - Tạo storage volumes sử dụng trong EC2. Hệ thống sử dụng phía trên EBS có thể sử dụng block storage cho việc tạo database,... EBS được đặt trong một Available zone (AZ) và được replicate để bảo vệ khỏi sự cố.
   - Types
     - **General purpose SSD (GP2)**
       - sử dụng với mục đích thông thường, cân bằng giữa giá và performance.
