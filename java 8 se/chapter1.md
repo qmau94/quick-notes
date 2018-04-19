@@ -482,3 +482,28 @@ Need to review: 1 3 4 5 6 7 8 9 11 12 15 20 21 23
 23. C D
 
 Need to review: 5 12
+
+- 04/19/2018 → (**23/23=100%**)
+1. A B E
+2. D
+3. B D E
+4. A B
+5. C D
+6. E
+7. A B C 
+8. B
+9. A C D E
+10. E
+11. C D 
+12. G
+13. A D 
+14. D
+15. A E
+16. B C D 
+17. A E 
+18. C D E
+19. B D
+20. B E
+21. A
+22. B C E
+23. C D 
