@@ -464,3 +464,26 @@ Need to review: Promote data types, order of numeric operators, boolean expressi
 20. B
 
 Need to review: 18 19
+
+- 04/25/2017 → **14/20=70%**
+1. A D
+2. A B D 
+3. F
+4. B C D F
+5. C
+6. F
+7. D
+8. B
+9. ~~B~~ **F**
+10. D
+11. A
+12. D
+13. ~~C~~ **A** b = true not b == true
+14. C
+15. ~~F~~ **E** ()
+16. ~~B~~ **D**  scope
+17. D
+18. ~~B~~ **A** 
+19. ~~C~~ **D**
+20. B
+

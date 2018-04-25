@@ -161,3 +161,63 @@ Chúng tôi đã chuẩn bị một bản mock-up mẫu cho website công ty t�
 - Bên chúng tôi sẽ nỗ lực hết sức có thể để biến ước mơ của quý công ty thành sự thật. Mọi tư vấn về kỹ thuật, marketing cơ bản trên các platform như facebook, zalo, linkedin đều được hỗ trợ miễn phí nếu có nhu cầu. Ngay cả bản báo cáo này cũng được hoàn thành trong 3 tiếng (miễn phí). Tất cả nhằm thể hiện rằng chúng tôi chân trọng ý tưởng và sự nhiệt huyết của giaohanghappy.
 
 - Bản báo cáo còn sơ sài và có thể có thiếu sót, rất mong quý công ty bỏ qua, một lần nữa cảm ơn vì đã tin tưởng sử dụng dịch vụ của chúng tôi.
+
+## Web giaohanghappy.com
+### Chức năng, yêu cầu:
+- Giao diện responsive cho điện thoại + PC
+- Đối tượng sử dụng:
+  - Khách hàng (user)
+    - Tên
+    - SĐT
+    - Địa chỉ 
+    - Email
+  - Người quản lý (admin)
+    - Tên
+    - Email
+- Đăng nhập, đăng ký (sử dụng email)
+- Tạo đơn hàng 
+  - Ngay trên trang chủ (nhập đầy đủ thông tin tên, sđt, địa chỉ)
+  - Sau khi đăng nhập
+  - Cho phép tính toán chi phí dựa trên quãng đường
+  - Cho phép lựa chọn thêm cách dịch vụ mới và tự tính giá tiền
+- Tra cứu thông tin đơn hàng bằng mã đơn hàng
+- Quản lý
+  - Quản lý người dùng (thêm, sửa, xoá)
+  - Quản lý đơn hàng (thêm, sửa, xoá)
+  - Xử lý đơn hàng (sửa, cập nhật trạng thái)
+- Kết hợp với chatbot (optional)
+- Các trang cần làm:
+  1. Trang chủ
+  2. Đăng nhập
+  3. Đăng ký
+  4. Tạo đơn hàng
+  5. Tra cứu đơn hàng
+  6. Quản lý
+  7. Quản lý người dùng(thêm, sửa, xoá)
+  8. Quản lý đơn hàng(thêm, sửa, xoá)
+  9. Xử lý đơn hàng
+  10. Trang cài đặt giá
+
+### Báo giá:
+- Dự kiến thời gian hoàn thành: **1/6/2018**
+- Chi phí dự kiến: **20.000.000đ**
+- Trong đó: 
+
+|STT|Nội dung|Thời gian|
+|:--|:--|:--:|
+|1|Chi phí xây dựng trang web như mục 1.3|40 giờ|
+|2|Chức năng tạo đơn hàng(tạo đơn hàng, thêm các dịch vụ, tự tính giá theo khoảng cách)|20 giờ|
+|3|Chức năng quản lý(người dùng, đơn hàng)|28 giờ|
+|4|Chức năng tra cứu, xử lý đơn hàng|10 giờ|
+|5|Chức năng thiết lập giá|5 giờ|
+||**Tổng**|**103 giờ**|
+
+Để tham khảo xin gửi quý công ty cách tính giá nhân lực công nghệ thông tin ở Việt Nam
+Đơn giá trung bình: 1 man/month = 20 man/day = 160 man/hours → 4000$ = ~90.000.000đ
+
+### Dịch vụ kèm theo
+- Bảo hành 3 và miễn phí chi phí hosting trong 3 tháng.
+- Miễn phí chứng chỉ bảo mật SSL cho website.
+- Tối ưu hoá cho điện thoại di động (thuận tiện cho việc làm ứng dụng web app sau này).
+- Miễn phí tích hợp với chatbot (sau khi facebook cho phép sử dụng chatbot mới).
+- Miễn phí hỗ trợ tư vấn cách giải pháp công nghệ mới cải thiện dịch vụ của quý công ty.
