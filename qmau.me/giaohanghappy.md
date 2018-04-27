@@ -200,7 +200,7 @@ Chúng tôi đã chuẩn bị một bản mock-up mẫu cho website công ty t�
 
 ### Báo giá:
 - Dự kiến thời gian hoàn thành: **1/6/2018**
-- Chi phí dự kiến: **20.000.000đ**
+- Chi phí dự kiến: **18.000.000đ**
 - Trong đó: 
 
 |STT|Nội dung|Thời gian|
