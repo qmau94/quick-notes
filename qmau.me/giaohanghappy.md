@@ -169,13 +169,13 @@ Chúng tôi đã chuẩn bị một bản mock-up mẫu cho website công ty t�
   - Khách hàng (user)
     - Tên
     - SĐT
-    - Địa chỉ 
+    - Địa chỉ
     - Email
   - Người quản lý (admin)
     - Tên
     - Email
 - Đăng nhập, đăng ký (sử dụng email)
-- Tạo đơn hàng 
+- Tạo đơn hàng
   - Ngay trên trang chủ (nhập đầy đủ thông tin tên, sđt, địa chỉ)
   - Sau khi đăng nhập
   - Cho phép tính toán chi phí dựa trên quãng đường
@@ -201,7 +201,7 @@ Chúng tôi đã chuẩn bị một bản mock-up mẫu cho website công ty t�
 ### Báo giá:
 - Dự kiến thời gian hoàn thành: **1/6/2018**
 - Chi phí dự kiến: **18.000.000đ**
-- Trong đó: 
+- Trong đó:
 
 |STT|Nội dung|Thời gian|
 |:--|:--|:--:|
@@ -214,6 +214,65 @@ Chúng tôi đã chuẩn bị một bản mock-up mẫu cho website công ty t�
 
 Để tham khảo xin gửi quý công ty cách tính giá nhân lực công nghệ thông tin ở Việt Nam
 Đơn giá trung bình: 1 man/month = 20 man/day = 160 man/hours → 4000$ = ~90.000.000đ
+
+###Update sau cuộc trao đổi với Mr.Tiến
+1. Chức năng bổ sung:
+- Tạo đơn hàng:
+  - Đơn hàng nhanh, không cần đăng ký (trực tiếp trên trang chủ)
+  - Đăng nhập để tạo đơn hàng
+    - Chức năng đăng nhập:
+      1. omniauth: facebook, gmail
+      2. Đăng ký: sđt, địa chỉ, tên(optional)
+- Tự gợi ý địa điểm:
+  - Lỗi, gửi bảo giá sau cho người dùng
+  - Mã đơn hàng random 4 số
+- Khách hàng quản lý đơn hàng:
+- Quản lý trạng thái:
+  1. Đang xử lý
+  2. Đang giao
+  3. Hoàn thành
+  4. Huỷ
+  5. Hẹn lại
+- Thêm thông tin cho đơn hàng: mã đơn hàng, sđt shipper
+- Cài đặt đơn giá:
+  - Giá mỗi dịch vụ
+  - Giá theo mỗi km
+  - Giá 5km đầu tiên
+- Mã khuyến mại:
+  - Liệt kê các đơn hàng của shop, cho phép chọn mức triết khấu cho các đơn hàng
+  - Gửi thông báo đến cho shop
+- Up đơn hàng lên facebook (để shipper có thể nhận) (facebook group)
+
+Tổng hợp lại các chức năng trong lần đầu bàn bạc và lần sau, dưới đây sẽ là khoảng thời gian dự kiến và báo giáo cho quý công ty.
+
+|STT|Nội dung|Thời gian|
+|:--|:--|:--:|
+|1|Chi phí xây dựng trang web như mục 1.3|40 giờ|
+|2|Chức năng tạo đơn hàng(tạo đơn hàng, thêm các dịch vụ, tự tính giá theo khoảng cách)|20 giờ|
+|3|Chức năng quản lý(người dùng, đơn hàng)|28 giờ|
+|4|Chức năng tra cứu, xử lý đơn hàng|10 giờ|
+|5|Chức năng thiết lập giá|5 giờ|
+|6\*|Chức năng đăng ký, đăng nhập |5 giờ|
+|7\*|Chức năng tạo mã đơn hàng, xử lý lỗi|5 giờ|
+|8\*|Chức năng quản lý trạng thái đơn hàng và khách hàng quản lý đơn hàng|10 giờ|
+|9\*|Chức năng cài đặt giá|5 giờ|
+|10\*|Chức năng mã khuyến mại|20 giờ|
+|11\*|Chức năng tự động up đơn hàng lên facebook| 20 giờ |
+||**Tổng**|**168 giờ**|
+
+\*chức năng bổ sung
+
+- Đơn giá lần trước 18.000.000đ/103 giờ = **175.000đ/giờ**
+
+- Đơn giá sau khi bổ sung chức năng 175.000đ/giờ * 168 giờ = 29.400.000đ →　29.000.000đ
+
+- Các chức năng sẽ được xây dựng theo yêu cầu của quý công ty trong thời gian **2 tháng**.
+
+- Thời gian tới, chúng tôi sẽ thiết kế lại cơ sở dữ liệu của chatbot để có thể sử dụng chung với hệ thống web sau khi hoàn thành và đưa hệ thống chatbot vào hoạt động trước.
+
+### Báo giá:
+- Dự kiến thời gian hoàn thành: **12/7/2018**
+- Chi phí dự kiến: **29.000.000đ**
 
 ### Dịch vụ kèm theo
 - Bảo hành 3 và miễn phí chi phí hosting trong 3 tháng.
